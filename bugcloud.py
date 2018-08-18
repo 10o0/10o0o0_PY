@@ -13,9 +13,9 @@ import random
 
 headers = {
     'accept': 'application/json, text/plain, */*',
-    'Host': '192.168.2.199',
-    'Referer': 'http://192.168.2.199/',
-    'cookie': 'sessionid=47rrrukxr4gf0dva18ksu9cxoiny9ea8',
+    'Host': '***',
+    'Referer': 'http://***/',
+    'cookie': '***',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:46.0) Gecko/20100101 Firefox/46.0',
 }
 
@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
     while (1):
         page = page + 1
-        url = "http://192.168.2.199/cloud/pluginvuln/?page=" + str(page)
+        url = "http://***/cloud/pluginvuln/?page=" + str(page)
         print(url)
         time.sleep(random.randint(1,10))
         json_dict = get_page(url)
